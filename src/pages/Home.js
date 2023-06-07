@@ -17,7 +17,7 @@ export function Home() {
     {
       id: 2,
       image: "/assets/banner-3.jpg",
-      _id: "5f7b1b3e6a7b3b4b4f7b1b3",
+      _id: "4f7b1b3e6a7b3b4b4f7b1b3",
     },
   ];
 
