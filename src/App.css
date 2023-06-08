@@ -177,7 +177,7 @@ input[type=radio] {
   color: var(--color-primary);
 }
 .btn-basic{
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 0.5rem;
   border: 1px solid var(--color-primary);
   background-color: transparent;
   font-size: 1.2rem;
@@ -234,7 +234,8 @@ input[type=radio] {
   height: 200px;
   object-fit: contain;
   margin: 1rem;
- }
+
+}
  .products-description {
   width: 70%;
   padding: 1rem;

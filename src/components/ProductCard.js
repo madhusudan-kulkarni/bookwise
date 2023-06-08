@@ -107,8 +107,13 @@ export function ProductCard({ data }, changeLayout) {
         <p style={{ marginBottom: "0.5rem" }}>{data.author}</p>
         <p style={{ color: "gray", marginBottom: "2%" }}>{data.categoryName}</p>
         <p style={{ fontSize: "1.2rem", marginBottom: "0.25rem" }}>
-          Price: ₹ {data.price}
-        </p>
+          Discounted Price: ₹ {data.price}
+        </p>{" "}
+        <span
+          style={{ textDecoration: "line-through", marginBottom: "0.25rem" }}
+        >
+          Original Price: ₹ {data.price * 2}
+        </span>
         <p
           style={{
             fontSize: "1.1rem",
@@ -118,7 +123,7 @@ export function ProductCard({ data }, changeLayout) {
         >
           Rating: {data.rating}
         </p>
-        <p style={{ color: "green" }}>20% discount on all products</p>
+        <p style={{ color: "green" }}>Flat 50% discount on all books!</p>
         <div className="card-btn-container">
           <button className="btn-basic" onClick={addToCart} value={data._id}>
             Add To Cart
