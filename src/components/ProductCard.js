@@ -2,7 +2,6 @@ import { useNavigate } from "react-router";
 import { useDataContext } from "../context/dataContext";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { FcLike } from "react-icons/fc";
 
 export function ProductCard({ data }, changeLayout) {
   const { state, cartData, setCartData, wishlistData, setWishlistData } =
@@ -105,19 +104,32 @@ export function ProductCard({ data }, changeLayout) {
         >
           {data.title}
         </p>
-        <p style={{ color: "gray", marginBottom: "2%" }}>{data.author}</p>
+        <p style={{ marginBottom: "0.5rem" }}>{data.author}</p>
         <p style={{ color: "gray", marginBottom: "2%" }}>{data.categoryName}</p>
-        <p style={{ fontSize: "1.2rem", marginBottom: "2%" }}>
+        <p style={{ fontSize: "1.2rem", marginBottom: "0.25rem" }}>
           Price: ₹ {data.price}
         </p>
-        <p style={{ fontSize: "1rem", color: "goldenrod" }}>
+        <p
+          style={{
+            fontSize: "1.1rem",
+            color: "goldenrod",
+            marginBottom: "0.25rem",
+          }}
+        >
           Rating: {data.rating}
         </p>
+        <p style={{ color: "green" }}>20% discount on all products</p>
         <div className="card-btn-container">
           <button className="btn-basic" onClick={addToCart} value={data._id}>
             Add To Cart
           </button>
-          <FcLike onClick={addToWishlist} value={data._id} size={35} />
+          <button
+            className="btn-basic"
+            onClick={addToWishlist}
+            value={data._id}
+          >
+            Add To Wishlist
+          </button>
         </div>
       </div>
       <ToastContainer
