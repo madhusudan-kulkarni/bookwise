@@ -28,3 +28,6 @@
 - Logout
 - Address Management
 - Checkout
+
+
+Loom Video - https://www.loom.com/share/f259db8a33744806a320de6d48a6f57e
